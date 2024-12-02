@@ -189,6 +189,16 @@ header h1 {
     gap: 120px;
     width: auto;
 }
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo img {
+  max-width: 40px; 
+}
 
 p {
     width: 300px;
