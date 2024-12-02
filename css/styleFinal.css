@@ -191,13 +191,13 @@ header h1 {
 }
 .logo {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  justify-content: flex-start; /* Aligns the logo to the left */
+  align-items: center; /* Keeps the logo vertically centered */
+  flex-grow: 0; /* Prevents the logo from growing to take extra space */
 }
 
 .logo img {
-  max-width: 40px; 
+  max-width: 50px; /* Adjust the size of the logo as needed */
 }
 
 p {
