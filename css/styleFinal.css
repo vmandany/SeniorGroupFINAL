@@ -21,11 +21,11 @@ header h1 {
     margin: 6px;
 }
 .navbar {
-    background: rgb(82, 151, 215); /* Set the background color to match about.html */
-    padding: 10px 0; /* Padding for spacing around the items */
-    width: 100%; /* Ensure the navbar spans the entire width */
-    display: flex; /* Flex display for centering */
-    justify-content: center; /* Center the menu items horizontally */
+    background: rgb(82, 151, 215); 
+    padding: 10px 0; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
 }
 
 .logo {
@@ -47,26 +47,26 @@ header h1 {
 
 .nav-links {
     display: flex;
-    justify-content: center; /* Center the nav items horizontally */
-    align-items: center; /* Center them vertically */
+    justify-content: center; 
+    align-items: center; 
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .nav-links li {
-     margin: 0 15px; /* Space between menu items */
+     margin: 0 15px; 
 }
 
 .nav-links a {
     color: azure;
     text-decoration: none;
-    padding: 14px 25px; /* Add padding to each link */
-    transition: color 0.3s; /* Smooth color transition on hover */
+    padding: 14px 25px; 
+    transition: color 0.3s; 
 }
 
 .nav-links a:hover {
-    color: black; /* Change color on hover */
+    color: black; 
 }
 
 .dropdown:hover .dropdown-content {
@@ -162,11 +162,10 @@ header h1 {
     object-fit: fill;
 }
 .image-slider:hover {
-    transform: scale(1.05); /* Slightly increase the size */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-    border-color: #5297d7; /* Change border color */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    border-color: #5297d7; 
 }
-/* Consultation Button */
 .consultation-button {
     display: inline-block;
     padding: 12px 24px;
@@ -177,7 +176,7 @@ header h1 {
     text-align: center;
     margin-top: 20px;
 }
-/* Additional styling for sections and containers */
+
 #grid-box {
     background-color: white;
     margin: 70px 180px 50px 180px;
@@ -196,16 +195,16 @@ header h1 {
 }
 .logo {
   display: flex;
-  justify-content: flex-start; /* Aligns the logo to the left */
-  align-items: center; /* Vertically aligns the logo */
-  flex-grow: 0; /* Prevents the logo from growing unnecessarily */
+  justify-content: flex-start; 
+  align-items: center;
+  flex-grow: 0; 
 }
 
 .logo img {
-  max-width: 50px; /* Adjust size */
-  margin: 0; /* Reset margins */
+  max-width: 50px; 
+  margin: 0; 
   position: relative;
-  top: 13px; /* Moves the logo down slightly */
+  top: 13px; 
 }
 
 p {
@@ -306,14 +305,14 @@ ul li:hover ul.drop {
 
 .cube {
     background-color: white;
-    margin: 20px auto; /* Center horizontally */
+    margin: 20px auto; 
     border-radius: 10px;
     box-shadow: 0 4px 10px rgb(128, 128, 128);
-    padding: 30px 40px; /* Ensure even padding from sides */
-    text-align: justify; /* Justifies the text inside */
-    max-width: 800px; /* Larger size for bigger screens */
-    width: 90%; /* Dynamically scales to the screen size */
-    line-height: 1.8; /* Improves text readability */
+    padding: 30px 40px; 
+    text-align: justify; 
+    max-width: 800px; 
+    width: 90%; 
+    line-height: 1.8; 
     opacity: 0.3; 
     transform: translateY(20px); 
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -328,28 +327,27 @@ ul li:hover ul.drop {
 
 .cube p {
     color: black;
-    text-align: justify; /* Ensures text is justified */
+    text-align: justify; 
     margin-top: 10px;
-    line-height: 1.6; /* Adjusts spacing for readability */
-    min-width: 80%; /* Forces content to take up width inside the box */
-    padding: 0 10px; /* Adds additional padding to the text */
+    line-height: 1.6; 
+    min-width: 80%; 
+    padding: 0 10px; 
 }
 .cube:hover {
-    background-color: #f0f8ff; /* Light blue on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add a stronger shadow */
-    transform: translateY(10px); /* Slightly move up */
-    opacity: 1; /* Fully visible on hover */
+    background-color: #f0f8ff; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+    transform: translateY(10px); 
+    opacity: 1; 
 }
-/* Media query for responsive design */
 @media screen and (max-width: 768px) {
     .cube {
-        max-width: 400px; /* Matches the size of image boxes */
-        padding: 15px; /* Reduce padding for smaller screens */
-        width: 90%; /* Ensures it still scales */
+        max-width: 400px; 
+        padding: 15px; 
+        width: 90%; 
     }
 
     .cube p {
-        line-height: 1.4; /* Slightly tighter spacing for smaller screens */
-        padding: 0 5px; /* Maintain padding in smaller screens */
+        line-height: 1.4; 
+        padding: 0 5px; 
     }
 }
