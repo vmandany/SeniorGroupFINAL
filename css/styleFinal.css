@@ -301,28 +301,36 @@ ul li:hover ul.drop {
 
 .cube {
     background-color: white;
-    margin-left: 180px;
-    margin-right: 180px;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin: 20px auto; 
     border-radius: 10px;
     box-shadow: 0 4px 10px rgb(128, 128, 128);
-    padding: 30px 90px;
-    text-align: justify;
+    padding: 20px; 
+    text-align: justify; 
     opacity: 0.3; 
     transform: translateY(20px); 
     transition: opacity 0.8s ease, transform 0.8s ease;
+    max-width: 400px; 
+    width: 90%; 
 }
 
+
 .cube h1 {
-    text-align: center;
+    text-align: center; 
     color: #5297d7;
     margin-bottom: 20px;
 }
 
 .cube p {
     color: black;
-    text-align: justify;
+    text-align: justify; 
     margin-top: 10px;
-    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cube {
+        margin: 20px auto; 
+        padding: 15px; 
+        max-width: 100%;
+    }
 }
