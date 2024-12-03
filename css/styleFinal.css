@@ -298,3 +298,28 @@ ul li a:hover {
 ul li:hover ul.drop {
     display: block;
 }
+
+.cube {
+    background-color: white;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(128, 128, 128);
+    padding: 30px 90px 30px 90px;
+    text-align: justify;
+    opacity: 0.3; 
+    transform: translateY(20px); 
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.cube h1 {
+    text-align: center;
+    color: #5297d7;
+}
+
+.cube p {
+    color: black;
+    text-align: justify;
+}
