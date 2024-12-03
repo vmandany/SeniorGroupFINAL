@@ -331,6 +331,7 @@ ul li:hover ul.drop {
     .cube {
         margin: 20px auto; 
         padding: 15px; 
+        width: 100%;
         max-width: 100%;
     }
 }
