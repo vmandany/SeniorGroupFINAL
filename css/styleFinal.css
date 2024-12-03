@@ -153,6 +153,7 @@ header h1 {
     border: 2px solid #1c66df;
     border-radius: 8px;
     margin: 0 auto;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .slider-img {
@@ -160,7 +161,11 @@ header h1 {
     height: 100%;
     object-fit: fill;
 }
-
+.image-slider:hover {
+    transform: scale(1.05); /* Slightly increase the size */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    border-color: #5297d7; /* Change border color */
+}
 /* Consultation Button */
 .consultation-button {
     display: inline-block;
@@ -312,6 +317,7 @@ ul li:hover ul.drop {
     opacity: 0.3; 
     transform: translateY(20px); 
     transition: opacity 0.8s ease, transform 0.8s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cube h1 {
@@ -328,7 +334,12 @@ ul li:hover ul.drop {
     min-width: 80%; /* Forces content to take up width inside the box */
     padding: 0 10px; /* Adds additional padding to the text */
 }
-
+.cube:hover {
+    background-color: #f0f8ff; /* Light blue on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add a stronger shadow */
+    transform: translateY(10px); /* Slightly move up */
+    opacity: 1; /* Fully visible on hover */
+}
 /* Media query for responsive design */
 @media screen and (max-width: 768px) {
     .cube {
