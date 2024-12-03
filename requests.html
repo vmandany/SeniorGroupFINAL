@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Request Page</title>
     <link rel="stylesheet" href="css/requests.css"> <!-- Link to your external CSS file -->
-
     <link rel="icon" type="image/png" sizes="512x512" href="images/favicon6.png">
     <link rel="icon" href="images/favicon6.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon6.ico" type="image/x-icon">
-
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="requests.html">Requests</a>
-        <a href="resources.html">Resources</a>
-        <a href="nogrid.html">About Us</a>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/favicon6.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="requests.html">Requests</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="nogrid.html">About Us</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
 
     <div class="form-container">
         <h2>Submit a Request</h2>
@@ -58,5 +68,11 @@
             <button type="submit" class="submit-button">Submit Request</button>
         </form>
     </div>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('top-nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
