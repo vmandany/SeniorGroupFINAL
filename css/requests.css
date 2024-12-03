@@ -20,9 +20,10 @@ body {
 
 /* Navigation Menu */
 nav {
-    background-color: #1c66df;
+    background-color: #5297d7;
     color: white;
-    padding: 10px;
+    padding: 10px 0;
+    width: 100%;
     text-align: center;
 }
 
