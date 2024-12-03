@@ -307,7 +307,7 @@ ul li:hover ul.drop {
     margin-bottom: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgb(128, 128, 128);
-    padding: 30px 90px 30px 90px;
+    padding: 30px 90px;
     text-align: justify;
     opacity: 0.3; 
     transform: translateY(20px); 
@@ -317,9 +317,11 @@ ul li:hover ul.drop {
 .cube h1 {
     text-align: center;
     color: #5297d7;
+    margin-bottom: 20px;
 }
 
 .cube p {
     color: black;
     text-align: justify;
+    margin-top: 10px;
 }
