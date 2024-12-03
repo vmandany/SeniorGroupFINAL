@@ -200,7 +200,7 @@ header h1 {
   max-width: 50px; /* Adjust size */
   margin: 0; /* Reset margins */
   position: relative;
-  top: 30px; /* Moves the logo down slightly */
+  top: 5px; /* Moves the logo down slightly */
 }
 
 p {
