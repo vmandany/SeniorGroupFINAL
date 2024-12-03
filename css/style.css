@@ -6,12 +6,12 @@
 }
 body{
     background-image: url('/Users/kevinsimac/Desktop/TesoroImage (1).jpg');
-    background-size: cover; /* Change to cover to maintain aspect ratio */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: white; 
-    background-attachment: fixed; /* Keep this if you want a fixed background */
+    background-attachment: fixed;
     
 }
 
@@ -52,13 +52,6 @@ nav a:hover{
     height: 90%;
     background-color: #0c4a6f; 
 }
-/*
-<style="height: 100%; width: 100%; object-fit: contain">
-
-nav li:first-child{
-    margin-right: 900px;
-}
-*/
 
 .sidebar{
     position: fixed; 
@@ -131,11 +124,11 @@ nav li:first-child{
 }
 
 .container {
-    width: 25vw; /* Width of the boxes */
-    height: 40vh; /* Height of the boxes */
+    width: 25vw; 
+    height: 40vh; 
     justify-content: center;
     display: flex;
-    gap: 20px; /* Space between the boxes */
+    gap: 20px; 
 
 }
 
@@ -151,14 +144,14 @@ nav li:first-child{
 
 .box {
     background-color: #152C3A;
-    width: 150vh; /* Width of the boxes */
-    height: 50vh; /* Height of the boxes */
-    color: white; /* Text color */
+    width: 150vh; 
+    height: 50vh; 
+    color: white; 
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px; /* Rounded corners */
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border-radius: 20px; 
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); 
   
 }
 .rectangle{
@@ -174,21 +167,21 @@ nav li:first-child{
 
 .videoBox {
     background-color: #ffffff;
-    color: black; /* Change to black for visibility */
-    width: 100%; /* Full width */
-    height: auto; /* Adjust as necessary */
+    color: black; 
+    width: 100%; 
+    height: auto; 
     display: flex;
-    justify-content: center; /* Aligns content to the left */
+    justify-content: center; 
     align-items: center;
-    padding: 20px; /* Add padding if needed */
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: 20px; 
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
 
 .videoCenter {
     width: 85%; 
     border-radius: 3% / 7%;
     color: black; 
-    /* Removed padding-top and padding-bottom for more flexible positioning */
+ 
 }
 
 
@@ -202,16 +195,16 @@ nav li:first-child{
 .imageSection{
     -webkit-text-fill-color: #000000; 
     padding-top: 3.5%; 
-    padding-bottom: 23%; /* Percentage maintians image ratio */ 
+    padding-bottom: 23%; 
     text-align: center;
 }
 
 body, .imageSection {
-    color: black; /* Ensures text inside the body and imageSection is black */
+    color: black; 
 }
 .imageSection h1 {
     color: #000000 !important;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Adds a shadow for better visibility */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); 
 }
 
 
@@ -219,8 +212,6 @@ body, .imageSection {
 
 .montserrat-font {
 
- /* <uniquifier>: Use a unique and descriptive class name
- <weight>: Use a value from 100 to 900 */
   
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -230,8 +221,6 @@ body, .imageSection {
 
 .open-sans-font {
 
-/* <uniquifier>: Use a unique and descriptive class name
- <weight>: Use a value from 300 to 800 */
 
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -243,7 +232,7 @@ body, .imageSection {
 
 .search-container {
     display: flex-end;
-    justify-content: flex-end; /* Aligns to the right */
+    justify-content: flex-end; 
    
 }
 
@@ -253,7 +242,7 @@ body, .imageSection {
 }
 
 .btn {
-    margin-left: 0px; /* Adjust the value as needed for spacing */
+    margin-left: 0px; 
     
 }
 
