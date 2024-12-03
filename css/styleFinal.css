@@ -301,11 +301,11 @@ ul li:hover ul.drop {
 
 .cube {
     background-color: white;
-    margin: 20px auto; /* Center the box horizontally */
+    margin: 20px auto; /* Center horizontally */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgb(128, 128, 128);
-    padding: 30px; /* Padding ensures good spacing inside */
-    text-align: justify; /* Align text evenly across the box */
+    padding: 30px 40px; /* Ensure even padding from sides */
+    text-align: justify; /* Justifies the text inside */
     max-width: 800px; /* Larger size for bigger screens */
     width: 90%; /* Dynamically scales to the screen size */
     line-height: 1.8; /* Improves text readability */
@@ -322,9 +322,11 @@ ul li:hover ul.drop {
 
 .cube p {
     color: black;
-    text-align: justify; /* Ensures text is evenly spread */
+    text-align: justify; /* Ensures text is justified */
     margin-top: 10px;
-    line-height: 1.6; /* Adjusts vertical spacing for text readability */
+    line-height: 1.6; /* Adjusts spacing for readability */
+    min-width: 80%; /* Forces content to take up width inside the box */
+    padding: 0 10px; /* Adds additional padding to the text */
 }
 
 /* Media query for responsive design */
@@ -337,5 +339,6 @@ ul li:hover ul.drop {
 
     .cube p {
         line-height: 1.4; /* Slightly tighter spacing for smaller screens */
+        padding: 0 5px; /* Maintain padding in smaller screens */
     }
 }
