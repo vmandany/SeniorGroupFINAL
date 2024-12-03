@@ -1,9 +1,7 @@
-/* General Reset */
 * {
     padding: 0;
     margin: 0;
 }
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -15,38 +13,38 @@ body {
     background-attachment: fixed;
     color: #000000;
 }
-
 header {
     display: flex;
     justify-content: space-between;
 }
-
 header h1 {
     margin: 6px;
 }
-
-/* Navbar Styling */
 .navbar {
-    background: rgb(82, 151, 215); /* Set the background color */
-    padding: 10px 0; /* Padding for spacing */
-    width: 100%; /* Ensure the navbar spans the full width */
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Spread items apart (logo, hamburger, etc.) */
-    align-items: center; /* Center them vertically */
-    position: relative; /* Required for positioning */
+    background: rgb(82, 151, 215); /* Set the background color to match about.html */
+    padding: 10px 0; /* Padding for spacing around the items */
+    width: 100%; /* Ensure the navbar spans the entire width */
+    display: flex; /* Flex display for centering */
+    justify-content: center; /* Center the menu items horizontally */
 }
 
 .logo {
-    flex-shrink: 0; /* Prevent the logo from shrinking */
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.logo img {
-    max-width: 50px; /* Adjust logo size */
-    margin: 0;
-    position: relative;
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+    .logo {
+     display: none;
+    }
 }
 
-/* Nav Links */
 .nav-links {
     display: flex;
     justify-content: center; /* Center the nav items horizontally */
@@ -57,7 +55,7 @@ header h1 {
 }
 
 .nav-links li {
-    margin: 0 15px; /* Space between menu items */
+     margin: 0 15px; /* Space between menu items */
 }
 
 .nav-links a {
@@ -71,7 +69,10 @@ header h1 {
     color: black; /* Change color on hover */
 }
 
-/* Dropdown Content */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -91,13 +92,8 @@ header h1 {
     background-color: #073D94;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Hamburger Menu */
 .hamburger {
-    display: none; /* Hidden by default */
+    display: none;
     cursor: pointer;
     flex-direction: column;
     align-items: center;
@@ -112,19 +108,18 @@ header h1 {
     transition: all 0.3s;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .logo {
-        display: none; /* Completely hides the logo on small screens */
+        display: none;
     }
 
     .hamburger {
-        display: flex; /* Show hamburger menu */
-        margin-left: auto; /* Align it to the far right */
+        display: flex;
+        margin-right: auto;
     }
 
     .nav-links {
-        display: none; /* Initially hidden */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 40px;
@@ -136,15 +131,18 @@ header h1 {
     }
 
     .nav-links li {
-        width: 100%; /* Full width for each menu item */
+        width: 100%;
+    }
+
+    .dropdown-content {
+        left: 100%;
+        top: 0;
     }
 
     .nav-links.active {
-        display: flex; /* Show menu when active */
+        display: flex;
     }
 }
-
-/* Image Boxes */
 .image-slider {
     width: 400px;
     height: 300px;
@@ -163,14 +161,149 @@ header h1 {
     height: 100%;
     object-fit: fill;
 }
-
 .image-slider:hover {
     transform: scale(1.05); /* Slightly increase the size */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     border-color: #5297d7; /* Change border color */
 }
+/* Consultation Button */
+.consultation-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1c66df;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+/* Additional styling for sections and containers */
+#grid-box {
+    background-color: white;
+    margin: 70px 180px 50px 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(128, 128, 128);
+    padding: 30px;
+    text-align: justify;
+}
 
-/* Text Boxes */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 120px;
+    width: auto;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start; /* Aligns the logo to the left */
+  align-items: center; /* Vertically aligns the logo */
+  flex-grow: 0; /* Prevents the logo from growing unnecessarily */
+}
+
+.logo img {
+  max-width: 50px; /* Adjust size */
+  margin: 0; /* Reset margins */
+  position: relative;
+  top: 13px; /* Moves the logo down slightly */
+}
+
+p {
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: #5297d7;
+}
+
+.search-container {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+
+.search-input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.search-button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #5297d7;
+    color: azure;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    flex: 1 1 400px;
+    max-width: 400px;
+    text-align: center;
+}
+section {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #1c66df;
+}
+
+p {
+    color: black;
+}
+
+ul {
+    list-style: none;
+    background: rgb(82, 151, 215);
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 14px 25px;
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.drop li {
+    display: block;
+}
+
+ul li ul.drop {
+    width: 100%;
+    background: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: cyan;
+}
+
+ul li:hover ul.drop {
+    display: block;
+}
+
 .cube {
     background-color: white;
     margin: 20px auto; /* Center horizontally */
@@ -183,6 +316,7 @@ header h1 {
     line-height: 1.8; /* Improves text readability */
     opacity: 0.3; 
     transform: translateY(20px); 
+    transition: opacity 0.8s ease, transform 0.8s ease;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -200,15 +334,13 @@ header h1 {
     min-width: 80%; /* Forces content to take up width inside the box */
     padding: 0 10px; /* Adds additional padding to the text */
 }
-
 .cube:hover {
     background-color: #f0f8ff; /* Light blue on hover */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add a stronger shadow */
     transform: translateY(10px); /* Slightly move up */
     opacity: 1; /* Fully visible on hover */
 }
-
-/* Responsive Adjustments for Text Boxes */
+/* Media query for responsive design */
 @media screen and (max-width: 768px) {
     .cube {
         max-width: 400px; /* Matches the size of image boxes */
