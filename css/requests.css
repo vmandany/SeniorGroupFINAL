@@ -18,94 +18,23 @@ body {
     padding: 20px;
 }
 
-/* Navbar Styling */
-.navbar {
-    background: #1c66df;
-    padding: 10px 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+/* Navigation Menu */
+nav {
+    background-color: #1c66df;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
-.logo {
-    flex-shrink: 0;
-}
-
-.logo img {
-    max-width: 50px;
-    margin: 0;
-    position: relative;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
+nav a {
     color: white;
     text-decoration: none;
-    padding: 14px 25px;
-    transition: color 0.3s;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
-.nav-links a:hover {
-    color: black;
-}
-
-/* Hamburger Menu */
-.hamburger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.hamburger .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
-    transition: all 0.3s;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .logo {
-        display: none; /* Hide the logo on smaller screens */
-    }
-
-    .hamburger {
-        display: flex;
-        margin-left: auto;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 40px;
-        left: 0;
-        width: auto;
-        background-color: #1c66df;
-        text-align: left;
-        padding-left: 0px;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* Form Container */
@@ -158,4 +87,26 @@ body {
 
 .submit-button:hover {
     background-color: #1553a8;
+}
+
+/* Footer and Other Styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #555;
+}
+
+h1, h2 {
+    color: #1c66df;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
 }
