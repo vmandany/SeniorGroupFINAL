@@ -5,21 +5,21 @@
     align-items: center;
 }
 body{
-    background-image: url('/Users/kevinsimac/Desktop/TesoroImage (1).jpg');
-    background-size: cover;
+    background-image: url('https://resourcecenter.lennar.com/wp-content/uploads/2023/06/OCH_Campana_Tesoro_Rend_StreetScene-1920x1080.jpg');
+    background-size: cover; /* Change to cover to maintain aspect ratio */
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: white; 
-    background-attachment: fixed;
+    background-attachment: fixed; /* Keep this if you want a fixed background */
     
 }
 
 nav{
     position:fixed;
     width: 100%; 
-    background-color: rgb(82, 151, 215); 
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.1); 
+    background-color: rgb(21,44,58); 
+    box-shadow: 3px 3px 5px rgba(168, 10, 10, 0.1); 
 
 }
 nav ul{
@@ -33,7 +33,7 @@ nav ul{
     position: fixed;
     width: 100%;
     height: 9%; 
-    background-color: rgb(82, 151, 215); 
+    background-color: rgb(21, 44, 58); 
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     color: white; 
 }
@@ -52,6 +52,13 @@ nav a:hover{
     height: 90%;
     background-color: #0c4a6f; 
 }
+/*
+<style="height: 100%; width: 100%; object-fit: contain">
+
+nav li:first-child{
+    margin-right: 900px;
+}
+*/
 
 .sidebar{
     position: fixed; 
@@ -124,34 +131,24 @@ nav a:hover{
 }
 
 .container {
-    width: 25vw; 
-    height: 40vh; 
+    width: 25vw; /* Width of the boxes */
+    height: 40vh; /* Height of the boxes */
     justify-content: center;
     display: flex;
-    gap: 20px; 
+    gap: 20px; /* Space between the boxes */
 
-}
-
-.container2 {
-    width: 600px;
-    background: transparent;
-    border:  2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    border-radius: 10px;
-    padding: 30px 40px;
 }
 
 .box {
     background-color: #152C3A;
-    width: 150vh; 
-    height: 50vh; 
-    color: white; 
+    width: 150vh; /* Width of the boxes */
+    height: 50vh; /* Height of the boxes */
+    color: white; /* Text color */
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px; 
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); 
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
   
 }
 .rectangle{
@@ -167,21 +164,21 @@ nav a:hover{
 
 .videoBox {
     background-color: #ffffff;
-    color: black; 
-    width: 100%; 
-    height: auto; 
+    color: black; /* Change to black for visibility */
+    width: 100%; /* Full width */
+    height: auto; /* Adjust as necessary */
     display: flex;
-    justify-content: center; 
+    justify-content: center; /* Aligns content to the left */
     align-items: center;
-    padding: 20px; 
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Add padding if needed */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
 
 .videoCenter {
     width: 85%; 
     border-radius: 3% / 7%;
     color: black; 
- 
+    /* Removed padding-top and padding-bottom for more flexible positioning */
 }
 
 
@@ -193,25 +190,16 @@ nav a:hover{
 }
 
 .imageSection{
-    -webkit-text-fill-color: #000000; 
+    -webkit-text-fill-color: #ffff; 
     padding-top: 3.5%; 
-    padding-bottom: 23%; 
+    padding-bottom: 23%; /* Percentage maintians image ratio */ 
     text-align: center;
 }
 
-body, .imageSection {
-    color: black; 
-}
-.imageSection h1 {
-    color: #000000 !important;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); 
-}
-
-
-
-
 .montserrat-font {
 
+ /* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900 */
   
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -221,6 +209,8 @@ body, .imageSection {
 
 .open-sans-font {
 
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 300 to 800 */
 
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -232,7 +222,15 @@ body, .imageSection {
 
 .search-container {
     display: flex-end;
-    justify-content: flex-end; 
+    justify-content: flex-end; /* Aligns to the right */
+   
+}
+
+.engineered{
+    background-color: #ffffff;
+    color:#152C3A;
+    background-size: cover;
+    height: 10%;
    
 }
 
@@ -242,7 +240,7 @@ body, .imageSection {
 }
 
 .btn {
-    margin-left: 0px; 
+    margin-left: 0px; /* Adjust the value as needed for spacing */
     
 }
 
@@ -277,6 +275,7 @@ footer{
 .contact-rectangle{
     text-align: center;
     background-color: #ffffff;
+    padding-bottom: 8%;
    
 }
 
@@ -286,20 +285,6 @@ footer{
     align-items: center;
     text-align: center;
     align-content: center;
-}
-
-.form-group{
-    margin-bottom:30px;
-}
-
-.regbody {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url(bg.png);
-    background-size: cover;
-    background-position: center;
 }
 
 .container-footer{
@@ -340,4 +325,3 @@ footer{
     
    
 }
-
